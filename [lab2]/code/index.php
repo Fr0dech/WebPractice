@@ -191,3 +191,14 @@ echo "\n";
 echo "\n";
 
 echo "Task 15\n";
+
+function printStringReturnNumber($str){
+    echo $str."\n"."Length: ".strlen($str);
+}
+$my_num = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
+echo printStringReturnNumber($my_num);
+echo "\n";
+echo "\n";
+
+
