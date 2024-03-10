@@ -414,3 +414,28 @@ for ($i = 1; $i < 21; $i++)
 echo "\n";
 
 echo "Task 20\n";
+$arr = [1,14,167,1082];
+$srAr = array_sum($arr) / count($arr);
+echo $srAr;
+echo "\n";
+
+$i = 100;
+$sum = ($i * ($i + 1)) / 2;
+// Математика 6 класс Виленкин
+echo $sum;
+echo "\n"; 
+
+$arr = [1,4,9,16,25,36,49];
+print_r(array_map("sqrt", $arr));
+echo "\n"; 
+
+$keys = range("a","z");
+$value = range(1,26);
+print_r(array_combine($keys , $value));
+echo "\n";
+
+$str = '1234567890';
+$sum = array_sum(str_split($str, 2));
+print_r($sum);
+echo "\n"; 
+
