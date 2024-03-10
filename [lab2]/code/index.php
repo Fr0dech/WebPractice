@@ -201,4 +201,59 @@ echo printStringReturnNumber($my_num);
 echo "\n";
 echo "\n";
 
+echo "Task 16\n";
+$str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat";
+function increaseEnthusiasm($string){
+    echo $string."!";
+}
+echo increaseEnthusiasm($str);
+echo "\n";
+echo "\n";
 
+function  repeatThreeTimes($string, $times){
+    for ($i = 0; $i < $times; $i++){
+        echo $string." ";
+    }
+}
+echo  repeatThreeTimes($str,3);
+echo "\n";
+echo "\n";
+echo  increaseEnthusiasm(repeatThreeTimes($str,3));
+echo "\n";
+echo "\n";
+function cut($string, $k = 10){
+    echo substr($string,$k);
+}
+echo cut($str, 111);
+echo "\n";
+echo "\n";
+
+function recursityElenemt($array, $index = 0){
+    if($index < count($array)){
+        echo $array[$index]." ";
+        recursityElenemt($array, $index+1);
+    }
+}
+$array = [1, 2, 3, 4, 5];
+echo recursityElenemt($array);
+echo "\n";
+echo "\n";
+
+function sumcif($number){
+    $sum = 0;
+    while ($number > 0 || $sum > 9){
+        if ($number == 0) {
+            $number = $sum;
+            $sum = 0;
+        }
+        $sum += $number % 10;
+        $number = (int)($number / 10); 
+    }
+    echo $sum;  
+}
+$num = 1234556879841265;
+echo sumcif($num);
+echo "\n";
+echo "\n";
+
+echo "Task 17\n";
