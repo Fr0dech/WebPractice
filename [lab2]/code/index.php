@@ -403,3 +403,14 @@ else{
 
 echo "\n";
 echo "Task 19\n";
+$n = 0;
+for ($i = 1; $i < 21; $i++)
+	{
+    for ($j = 1; $j < ($i+1); $j++){
+        echo "x";
+    }
+    echo "\n";
+}
+echo "\n";
+
+echo "Task 20\n";
