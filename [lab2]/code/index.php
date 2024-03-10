@@ -36,3 +36,9 @@ echo $days_per_language;
 echo "\n";
 echo "\n";
 
+// Task 12
+echo 8**2;
+echo "\n";
+echo "\n";
+
+// Task 13
