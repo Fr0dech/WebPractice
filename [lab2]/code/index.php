@@ -257,3 +257,89 @@ echo "\n";
 echo "\n";
 
 echo "Task 17\n";
+$array = [];
+$k = 7;
+for ($i = 1; $i < ($k+1); $i++){
+    $array[] = str_repeat("x", $i);
+}
+print_r($array);
+
+function arrayFill($string, $k){
+    for ($i = 0; $i<$k; $i++){
+        $array[] = $string;
+   }
+   print_r($array);
+}
+echo arrayFill("x", 7);
+
+function sumOfArrays($array){
+    $sum = 0;
+    foreach ($array as $subArray){
+        foreach ($subArray as $value){
+            $sum += $value;
+        }
+    }
+    echo $sum;
+}
+$array = [[1,2],[3,5]];
+echo sumOfArrays($array);
+echo "\n";
+
+$arr = [];
+$n = 1;
+$rows = 7;
+$cols = 7;
+for ($i = 0; $i< $rows; $i++){
+    $podar = [];
+    for ($j = 0; $j< $cols; $j++){
+        $podar[] = $n;
+        $n++;
+    }
+    $arr[] = $podar;
+}
+print_r($arr);
+
+$arr = [2,5,3,9];
+$result = $arr[0] * $arr[1] + $arr[2] * $arr[3];
+echo $result;
+echo "\n";
+
+$user = [
+    "name" => "Stanislav",
+    "surname" => "Mikhailov",
+    "patronymic" => "Dmitrievich"
+];
+
+echo $user["name"]." ".$user["surname"]." ".$user["patronymic"];
+echo "\n";
+
+$date = [
+    "year" => "2024",
+    "month" => "03",
+    "day" => "10"
+];
+echo $date["year"]."-".$date["month"]."-".$date["day"];
+echo "\n";
+echo "\n";
+
+$arr = ["a","b","c","d","e"];
+$n = 0;
+foreach ($arr as $value){
+    $n+=1;
+}
+echo $n;
+echo "\n";
+$arr = ["a","b","c","d","e"];
+$n = 0;
+
+foreach ($arr as $value){
+    $n+=1;
+}
+echo "\n";
+echo $arr[($n-1)];
+echo "\n";
+echo $arr[($n-2)];
+echo "\n";
+echo "\n";
+
+echo "Task 18\n";
