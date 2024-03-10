@@ -343,3 +343,63 @@ echo "\n";
 echo "\n";
 
 echo "Task 18\n";
+
+function sum10($a,$b){
+    if ($a+$b > 10){
+        echo "True";
+    }
+    else{
+        echo "False"; 
+    }    
+}
+echo sum10(6,5);
+echo "\n";
+
+function equalNumber($a,$b){
+    if ($a == $b){
+        echo "True";
+    }
+    else{
+        echo "False"; 
+    }    
+}
+echo equalNumber(4,5);
+echo "\n";
+$int = 0;
+echo ($int == 0) ? "Верно" : "Неверно";
+echo "\n";
+
+function numberInTheRange($a){
+    if ($a < 10 || $a > 99){
+        echo "Число либо <10, либо >99";
+    }
+    else{
+        if ((($a % 10) + floor($a / 10)) < 10){
+            echo "Однозначна";
+        }
+        else{
+            echo "Двузначна";
+        }
+    }
+}
+echo numberInTheRange(9);
+echo "\n";
+
+
+$arr = [3,4,5];
+$n = 0;
+foreach ($arr as $value){
+    $n++;
+}
+if ($n == 3){
+    $sum = $arr[0] + $arr[1] + $arr[2];
+    echo $sum;
+    echo "\n";
+}
+else{
+    echo "В массиве не 3 элемента";
+    echo "\n";
+}
+
+echo "\n";
+echo "Task 19\n";
