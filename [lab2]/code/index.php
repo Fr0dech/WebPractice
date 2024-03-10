@@ -1,6 +1,6 @@
 <?php
 header('Content-type: text/plain');
-// Task 1
+echo "Task 1\n";
 /* Imagine a lot of code here*/
 
 $very_bad_unclear_name = "15 chicken wings";
@@ -8,11 +8,11 @@ $very_bad_unclear_name = "15 chicken wings";
 $order = &$very_bad_unclear_name;
 $order .= ', a number nine large, a number six with extra dip...';
 //Dont change the line below
-echo "\nYour order is: $very_bad_unclear_name.";
+echo "Your order is: $very_bad_unclear_name.";
 echo "\n";
 echo "\n";
 
-// Task 2
+echo "Task 2\n";
 $cumpot = 1;
 echo $cumpot;
 echo "\n";
@@ -27,7 +27,7 @@ echo $last_month - $this_month;
 echo "\n";
 echo "\n";
 
-// Task 11
+echo "Task 11\n";
 $num_languages = 4;
 $months = 11;
 $days = $months * 16;
@@ -36,9 +36,18 @@ echo $days_per_language;
 echo "\n";
 echo "\n";
 
-// Task 12
+echo "Task 12\n";
 echo 8**2;
 echo "\n";
 echo "\n";
 
-// Task 13
+echo "Task 13\n";
+$my_num = 20;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer;
+// so far so good
