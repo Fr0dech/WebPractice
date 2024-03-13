@@ -67,7 +67,7 @@ echo "$a % $b = ";
 echo $a % $b;
 echo "\n";
 
-if ($a % $b == 0)
+if (0 === $a % $b)
 {
 	echo "Делится: ";
 	echo $a / $b;
@@ -166,7 +166,7 @@ echo $k;
 echo "\n";
 $mass = "";
 for ($i = 1; $i <= $k; $i++){
-    if ($k  % $i == 0){
+    if (0 === $k  % $i){
         $mass .= $i." ";
     }
 }
@@ -242,7 +242,7 @@ echo "\n";
 function sumcif($number){
     $sum = 0;
     while ($number > 0 || $sum > 9){
-        if ($number == 0) {
+        if (0 === $number) {
             $number = $sum;
             $sum = 0;
         }
@@ -345,7 +345,7 @@ echo "\n";
 echo "Task 18\n";
 
 function sum10($a,$b){
-    if ($a+$b > 10){
+    if ($a + $b > 10){
         echo "True";
     }
     else{
@@ -356,7 +356,7 @@ echo sum10(6,5);
 echo "\n";
 
 function equalNumber($a,$b){
-    if ($a == $b){
+    if ($b === $a){
         echo "True";
     }
     else{
@@ -366,7 +366,7 @@ function equalNumber($a,$b){
 echo equalNumber(4,5);
 echo "\n";
 $int = 0;
-echo ($int == 0) ? "Верно" : "Неверно";
+echo (0 === $int) ? "Верно" : "Неверно";
 echo "\n";
 
 function numberInTheRange($a){
@@ -391,7 +391,7 @@ $n = 0;
 foreach ($arr as $value){
     $n++;
 }
-if ($n == 3){
+if (3 === $n){
     $sum = $arr[0] + $arr[1] + $arr[2];
     echo $sum;
     echo "\n";
